@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python neuron.py)",
+      "Bash(py --version)"
+    ]
+  }
+}
