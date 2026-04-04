@@ -7,7 +7,7 @@ bias = -0.1
 
 
 # Calculates weighted sum using the inputs array, weights array, and bias as parameters
-def calculate_weighted_sum(
+def calculateWeightedSum(
     inputs: List[float], weights: List[float], bias: float
 ) -> float:
     weightedSum = 0
@@ -29,7 +29,8 @@ def sigmoid(weighted_sum) -> float:
     return 1 / (1 + exp)
 
 
-weighted_sum = calculate_weighted_sum(inputs, weights, bias)
-squished_weighted_sum = sigmoid(weighted_sum)
+if __name__ == "__main__":
+    weighted_sum = calculateWeightedSum(inputs, weights, bias)
+    squished_weighted_sum = sigmoid(weighted_sum)
 
-print(squished_weighted_sum)
+    print(squished_weighted_sum)
